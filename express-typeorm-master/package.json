@@ -1,0 +1,28 @@
+{
+  "name": "express-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "report": "node report.js",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=5000 --watchAll",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "nodemon":"latest",
+    "supertest": "^7.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "pg": "^8.13.1",
+    "typeorm": "^0.3.20"
+  }
+}
